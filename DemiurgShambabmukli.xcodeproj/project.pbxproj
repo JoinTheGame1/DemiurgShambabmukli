@@ -8,17 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		F17F576C2C6A784C00D5C7EE /* DemiurgShambabmukliApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17F576B2C6A784C00D5C7EE /* DemiurgShambabmukliApp.swift */; };
-		F17F576E2C6A784C00D5C7EE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17F576D2C6A784C00D5C7EE /* ContentView.swift */; };
+		F17F576E2C6A784C00D5C7EE /* CellularFillingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17F576D2C6A784C00D5C7EE /* CellularFillingView.swift */; };
 		F17F57702C6A784E00D5C7EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F17F576F2C6A784E00D5C7EE /* Assets.xcassets */; };
 		F17F57732C6A784E00D5C7EE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F17F57722C6A784E00D5C7EE /* Preview Assets.xcassets */; };
+		F17F577B2C6A7B1300D5C7EE /* CellularFillingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17F577A2C6A7B1300D5C7EE /* CellularFillingViewModel.swift */; };
+		F17F577D2C6A7B2A00D5C7EE /* CellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17F577C2C6A7B2A00D5C7EE /* CellModel.swift */; };
+		F17F57822C6A80A400D5C7EE /* Color + hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17F57812C6A80A400D5C7EE /* Color + hex.swift */; };
+		F17F57852C6A842200D5C7EE /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17F57842C6A842200D5C7EE /* CellView.swift */; };
+		F17F57872C6BAEE600D5C7EE /* CGFloat + padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17F57862C6BAEE600D5C7EE /* CGFloat + padding.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F17F57682C6A784C00D5C7EE /* DemiurgShambabmukli.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemiurgShambabmukli.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F17F576B2C6A784C00D5C7EE /* DemiurgShambabmukliApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemiurgShambabmukliApp.swift; sourceTree = "<group>"; };
-		F17F576D2C6A784C00D5C7EE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F17F576D2C6A784C00D5C7EE /* CellularFillingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellularFillingView.swift; sourceTree = "<group>"; };
 		F17F576F2C6A784E00D5C7EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F17F57722C6A784E00D5C7EE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F17F577A2C6A7B1300D5C7EE /* CellularFillingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellularFillingViewModel.swift; sourceTree = "<group>"; };
+		F17F577C2C6A7B2A00D5C7EE /* CellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellModel.swift; sourceTree = "<group>"; };
+		F17F57812C6A80A400D5C7EE /* Color + hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color + hex.swift"; sourceTree = "<group>"; };
+		F17F57842C6A842200D5C7EE /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
+		F17F57862C6BAEE600D5C7EE /* CGFloat + padding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat + padding.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +61,10 @@
 		F17F576A2C6A784C00D5C7EE /* DemiurgShambabmukli */ = {
 			isa = PBXGroup;
 			children = (
-				F17F576B2C6A784C00D5C7EE /* DemiurgShambabmukliApp.swift */,
-				F17F576D2C6A784C00D5C7EE /* ContentView.swift */,
-				F17F576F2C6A784E00D5C7EE /* Assets.xcassets */,
+				F17F57802C6A808F00D5C7EE /* Extensions */,
+				F17F577F2C6A807D00D5C7EE /* Resources */,
+				F17F577E2C6A806D00D5C7EE /* Root */,
+				F17F57792C6A7B0200D5C7EE /* CellularFilling */,
 				F17F57712C6A784E00D5C7EE /* Preview Content */,
 			);
 			path = DemiurgShambabmukli;
@@ -65,6 +76,50 @@
 				F17F57722C6A784E00D5C7EE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F17F57792C6A7B0200D5C7EE /* CellularFilling */ = {
+			isa = PBXGroup;
+			children = (
+				F17F57832C6A840D00D5C7EE /* Components */,
+				F17F576D2C6A784C00D5C7EE /* CellularFillingView.swift */,
+				F17F577A2C6A7B1300D5C7EE /* CellularFillingViewModel.swift */,
+				F17F577C2C6A7B2A00D5C7EE /* CellModel.swift */,
+			);
+			path = CellularFilling;
+			sourceTree = "<group>";
+		};
+		F17F577E2C6A806D00D5C7EE /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				F17F576B2C6A784C00D5C7EE /* DemiurgShambabmukliApp.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		F17F577F2C6A807D00D5C7EE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F17F576F2C6A784E00D5C7EE /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F17F57802C6A808F00D5C7EE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F17F57812C6A80A400D5C7EE /* Color + hex.swift */,
+				F17F57862C6BAEE600D5C7EE /* CGFloat + padding.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F17F57832C6A840D00D5C7EE /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F17F57842C6A842200D5C7EE /* CellView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +192,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F17F576E2C6A784C00D5C7EE /* ContentView.swift in Sources */,
+				F17F576E2C6A784C00D5C7EE /* CellularFillingView.swift in Sources */,
 				F17F576C2C6A784C00D5C7EE /* DemiurgShambabmukliApp.swift in Sources */,
+				F17F57872C6BAEE600D5C7EE /* CGFloat + padding.swift in Sources */,
+				F17F57852C6A842200D5C7EE /* CellView.swift in Sources */,
+				F17F57822C6A80A400D5C7EE /* Color + hex.swift in Sources */,
+				F17F577B2C6A7B1300D5C7EE /* CellularFillingViewModel.swift in Sources */,
+				F17F577D2C6A7B2A00D5C7EE /* CellModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
